@@ -16,7 +16,7 @@ public class CircleController {
 	//@GetMapping("/view")
 @RequestMapping(method=RequestMethod.GET)
 public String printHello(ModelMap model, HttpServletRequest httpServletRequest ){
-	System.out.println("circleController called");
+	System.out.println("circleController called ....");
 	model.addAttribute("message", "Hello Spring MVC Framework......");
 	return "h1.jsp";//redirect to h1.jsp  forward,redirect:
 	/*httpServletRequest.setAttribute("mykey", "myvalue");
